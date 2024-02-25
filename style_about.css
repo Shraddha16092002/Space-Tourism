@@ -1,0 +1,79 @@
+body{
+    background-image: url("rocket.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-size: 100% 50%; */
+    background-position: 85% 35%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    /* text-decoration: none; */
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding-top: 2%;
+    color: white;
+
+    /* padding: 10%; */
+}
+.navbar li{
+    padding: 0 3%;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 139%;
+}
+.content{
+    margin-left: 41%;
+    margin-right: 7%;
+    margin-top: 8.5%;
+    color: white;
+}
+.content p{
+    font-size: 144%;
+}
+h1::before{
+  
+        content: " ";
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        border-top: 10px solid white;
+        border-left: 10px solid white;
+        top: 20%;
+        left: 250;
+        right: 57%;
+    
+}
+h1::after {
+    content: " ";
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+    top: 75%;
+    right: 5%;
+}
+.const{
+    border: 2px solid rgb(7 7 90);
+    border-radius: 8%;
+    /* border-width: 118px; */
+    background-color: #8062b7ad;
+}
+@media screen and (min-width:350px) and (max-width:1000px) {
+h1::before,h1::after{
+    visibility: hidden;
+}
+.content{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 6%;
+    
+}
+}
